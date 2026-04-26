@@ -1,15 +1,19 @@
-import './App.css'
-import Header from './Header'
+import './App.css';
+import Header from './Header';
+import Footer from './Footer';
+import Statistique from './Statistique';
 
-const App = () => (
+function App() {
+  return (
     <div className="App">
       <Header />
-      <main className='contenue'>
-
-      <h1>Binevenue :) SenTransport  </h1>
-      <p>le plus grand reseau de transport en commu8n a dakar </p>
+      <main className="contenu">
+        <p>Bienvenue ! Cette application vous aide à trouver votre ligne de bus à Dakar.</p>
+        <Statistique />
       </main>
+      <Footer />
     </div>
-  )
+  );
+}
 
-export default App
+export default App;

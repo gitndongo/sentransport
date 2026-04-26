@@ -1,11 +1,17 @@
-import './Header.css'
+import './Header.css';
 
-export default function Header(){
-    return (
-        <header className='header'>
-        <h1 className="header-titre">SenTransport</h1>
-        <p className="header-soustitre" >Votre guide de transport en commun a dakar</p>
+function Header() {
+  const aujourdhui = new Date().toLocaleDateString('fr-FR');
 
-        </header>
-    )
+  return (
+    <header className="header">
+      <h1 className="header-titre">SénTransport</h1>
+      <p className="header-soustitre">
+        Votre guide du transport en commun à Dakar
+      </p>
+      <p className="header-date">{aujourdhui}</p>
+    </header>
+  );
 }
+
+export default Header;
