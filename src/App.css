@@ -18,3 +18,27 @@
     padding: 12px;
   }
 }
+.compteur-recherches {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  margin-bottom: 8px;
+}
+.resultat-recherche {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 8px;
+}
+.aucune-ligne {
+  text-align: center;
+  color: #e74c3c;
+  font-size: 1rem;
+  padding: 20px;
+  background: #fff5f5;
+  border-radius: 8px;
+  border: 1px solid #e74c3c;
+}
+@media (max-width: 600px) {
+  .contenu { padding: 12px; }
+  .ligne-bus { padding: 10px 12px; }
+  .ligne-numero { width: 40px; height: 40px; font-size: 1rem; margin-right: 12px; }
+}
